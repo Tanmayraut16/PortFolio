@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANMAY RAUT</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="smallScreen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="nav-bar">
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <div class="dropdown">
+                            <li><a href="#">Resume</a></li>
+                            <div class="dropdown-content">
+                                <a href="Tanmay Raut Resume.pdf" download>Download Resume</a>
+                            </div>
+                        </div>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+            </div>
+            <div class="header-text">
+                <h2>I'm <span class="auto-type"></span></h2><br>
+                <h1>Hi, I'm<br><span>Tanmay</span> Raut<br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="t1-removebg-preview.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Hi I'm Tanmay Raut, an aspiring Java developer with a keen interest in web development and Block chain technology. As an Information Technology student, I am passionate about exploring the depths of computer science and continuously expanding my knowledge in this ever-evolving field. 
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing web Application</li><br><br>
+                            <li><span>JAVA</span><br>Data Structures and Algorithm</li><br><br>
+                            <li><span>C++</span></li><br><br>
+                            <li><span>Object Oriented Programming</span></li><br><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java Intern</span><br>Oasis Infobyte (September 2023 - October 2023)</li><br><br>
+                            <li><span>Java Intern</span><br>Codsoft (July 2023 - September 2023)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded <br><br>B-Tech in Information Technology <br><br>CGPA - 9.08 (First year)</li><br><br>
+                            <li><span>2020 - 2022</span><br>Shri Datta Vidya Mandir , Buttibori, Nagpur <br><br>12th with 88.4%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container2">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Make Your Website Shine<br>
+                        I breathe life into designs, ensuring your website or application not only looks appealing but also provides an intuitive and user-friendly interface.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Development</h2>
+                    <p>Unleashing the Power of Java for Seamless Solutions<br>
+                        Whether you're looking for backend solutions, enterprise-level applications, or intricate algorithms, I've got you covered with our proficiency in Java programming.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Tech troubles? I've got your back! From debugging to optimizing processes, our problem-solving skills will navigate challenges and unlock new possibilities for you.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MY WORK -->
+    <div id="portfolio">
+        <div class="container1">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="currency-converter.png" alt="">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>This dynamic web tool, integrated with an API, enables swift and accurate exchanges between currencies. </p>
+                        <a href="https://tanmayraut16.github.io/Currency_Convereter/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="quiz.mp4" autoplay></video>
+                    <div class="layer">
+                        <h3>Quiz websitr</h3>
+                        <p>This is an fun Quiz website. Here you can start timer and you will be tested with some simple question and at the end you score will be displayed.Time limit for ech question is 60sec.</p>
+                        <a href="https://tanmayraut16.github.io/Quiz/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="QR.png" alt="">
+                    <div class="layer">
+                        <h3>Qr Code Generator</h3>
+                        <p>A powerful tool crafted with HTML, CSS, and JavaScript, enhanced by seamless API integration. Simplify your information sharing effortlessly by converting text or links into scannable QR codes. </p>
+                        <a href="https://tanmayraut16.github.io/QR-code-Generator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="slider.png" alt="" height="470px">
+                    <div class="layer">
+                        <h3>Image Slider</h3>
+                        <p>Using HTML CSS and Javascript made an Image Slider. In this we can see a beatiful image carousel.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="calculator.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A sleek Calculator, meticulously crafted with HTML, CSS, and JavaScript for a seamless and dynamic user experience.</p>
+                        <a href="https://github.com/Tanmayraut16/Calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Tanmayraut16?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container1">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i id="icon" class="fa-solid fa-envelope"></i>Tanmayraut16@outlook.com</p>
+                    <p><i id="icon" class="fa-solid fa-phone"></i> +91 9359195076</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/tanmay_raut16/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Tanmayraut16"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tanmay-raut-416303257/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="b">
+                        <a href="Tanmay Raut Resume.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messgae"></textarea>
+                        <i id="icon" class="fa-solid fa-paper-plane"></i><button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Tanmay Raut. All Rights Reserved.<br>Unauthorized reproduction or use of any content without permission is strictly prohibited.</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type" , {
+            strings: ["Coder" , "Designer" , "Developer"] , typeSpeed:150 , backSpeed:150,
+            loop: true
+        })
+    </script>
+
+</body>
+</html>
