@@ -72,8 +72,17 @@
       font-size: 14px;
     }
   }
+  @media only screen and (max-width: 885px){
+    .container .nav-bar{
+      margin-left: 10%;
+      flex-basis: 100%;
+    }
+    nav ul li a{
+      font-size: 15px;
+    }
+  }
   
-@media only screen and (max-width: 1064px){
+@media (max-width: 1064px){
   .container .nav-bar{
     width: fit-content;
     height: relative;
@@ -84,13 +93,5 @@
   }
   .header-text h1{
     font-size: 5rem;
-  }
-}
-@media only screen and (max-width: 885px){
-  .container .nav-bar{
-    margin-left: 10%;
-  }
-  nav ul li a{
-    font-size: 15px;
   }
 }
