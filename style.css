@@ -134,7 +134,6 @@ nav ul li a:hover::after {
   #about {
     padding: 80px 0;
     color: #ababab;
-    /* background-image: url(rm183-wan-11.jpg) ; */
   background-size: cover;
   background-position: center;
   }
