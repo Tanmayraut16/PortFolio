@@ -23,36 +23,38 @@ body {
   background-position: center;
 }
 .container{
-  padding: 10px 10%;
+  /* padding: 10px 10%; */
   height: 100%;
   width: 100%;
-  margin-left: auto;
+  /* margin-left: auto; */
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.819) , rgba(0, 0, 0, 0.225) , rgba(255, 128, 1, 0.359));
 }
-.container img{
+/* .container img{
   width: 6rem;
-}
+} */
 .container .nav-bar{
-  width: fit-content;
-  height: relative;
-  /* display: flex;
-  justify-content: center; */
-  margin-left: 15%;
-  border-radius: 50px;
-  background-color: #262626a1;
-  z-index: 20px;
+  width: 100%;
+  height: 10%;
+  padding: 3rem;
+  background-color: #2626266b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 30px;
 }
-.nav-bar nav{
-  padding: 13px;
+.nav-bar img{
+  height: 3rem;
+  width: 200px;
 }
-nav ul li{
+.nav-bar ul li{
   list-style-type: none; 
   padding: 0;
   display: inline; 
-  margin: 20px;
+  margin: 17px;
 }
 
-nav ul li a {
+.nav-bar ul li a {
   color: #fff;
   text-decoration: none; 
   font-size: 1rem; 
@@ -60,7 +62,7 @@ nav ul li a {
 }
 
 
-nav ul li a::after {
+.nav-bar ul li a::after {
   content: '';
   width: 0;
   height: 3px;
@@ -71,7 +73,7 @@ nav ul li a::after {
   transition: 0.5s;
 }
 
-nav ul li a:hover::after {
+.nav-bar ul li a:hover::after {
   width: 100%;
   z-index: 30px;
 }
@@ -90,7 +92,6 @@ nav ul li a:hover::after {
   z-index: 1;
   border-radius: 8px;
   padding: 8px 0;
-  font-family: 'Arial', sans-serif;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,7 +112,11 @@ nav ul li a:hover::after {
 .dropdown-content a:hover {
   color: #fff;
 }
+.nav-bar i{
+  display: none;
+}
 .header-text{
+  padding: 10px 10%;
   position: relative;
   margin-top: 12%;
   animation: moveright 1s;
@@ -148,6 +153,10 @@ nav ul li a:hover::after {
 
   .about-col-1{
     flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
   }
   .about-col-1 img{
     position: relative;
@@ -157,6 +166,7 @@ nav ul li a:hover::after {
     border-width: 5px;
     border-style:inset;
     margin-bottom: 50px;
+    object-fit: cover;
     transition: transform 0.5s;
     animation: moveright 1s;
   }

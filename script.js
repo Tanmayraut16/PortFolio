@@ -2,10 +2,10 @@ var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
-        for(tablink of  tablinks){
+        for(let tablink of  tablinks){
             tablink.classList.remove("active-link")
         }
-        for(tabcontent of  tabcontents){
+        for(let tabcontent of  tabcontents){
             tabcontent.classList.remove("active-tab")
         }
         event.currentTarget.classList.add("active-link");
@@ -15,8 +15,8 @@ var tabcontents = document.getElementsByClassName("tab-contents");
 var menu = document.getElementById("menu");
 
     function openmenu(){
-        menu.style.left = "0";
+        menu.style.right = "0";
     }
     function closemenu(){
-        menu.style.left = "-200px";
+        menu.style.right = "-200px";
     }
